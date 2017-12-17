@@ -1,0 +1,250 @@
+<!--<h3 style="text-align:center">Front logs</h3>
+
+
+<div *ngIf="forecasts" style="height:50%;"
+     infinite-scroll
+               [infiniteScrollDistance]="2"
+               [infiniteScrollThrottle]="10"
+               (scrolled)="onScrollDown()">
+
+        <div class="tblHeader">
+            <div class="tblCell col1">#</div>
+            <div class="tblCell col2">First Name</div>
+            <div class="tblCell col3">Last Name</div>
+        </div>
+        <div style=""
+               >
+            <div *ngFor="let m of forecasts" class="tblRow">
+                <div class="logMain" (click)="openLog(m)">
+                    <div class="tblCell col1">{{m.dateFormatted}}</div>
+                    <div class="tblCell col2">{{m.temperatureC}}</div>
+                    <div class="tblCell col3">{{m.temperatureF}}</div>
+                </div>
+                <div *ngIf="m.show" class="logDetails">
+                    <div style="height:300px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>-->
+
+<h3 style="text-align:center">Front logs</h3>
+<div class="container" style="height:650px;overflow:auto">
+    <div style="height:600px;overflow:auto">
+        <table class="table  table-hover table-striped">
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>ErrorMessage</th>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                    <th style="max-width:15px"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>
+                        Error Exception<button (click)="openLogDetails()" type="submit" class="btn btn-link "><span class="glyphicon glyphicon-star"></span></button>
+
+                    </td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td style="width:15px">
+                        <div  class="btn-group">
+                            <button type="button" class="btn btn-default" (click)="shareLog()" data-placement="bottom" data-toggle="tooltip" data-original-title="Share">
+                                <i class="fa fa-share" aria-hidden="true"></i> Share
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+    <!--<email [logId]="100" [show]="showEmailForm"></email>-->
+    <toaster-container ></toaster-container>
+
+    <div id="myModal" class="customerModal" *ngIf="showEmailForm">
+        <!-- Modal content -->
+        <div class="customModalHeader">
+            Share log with coworkers
+            <span class="customeModalClose" (click)="closeEmailForm()"><i class="fa fa-times" aria-hidden="true"></i></span>
+        </div>
+        <div class="customerModalContent">
+            <!--<span class="close">&times;</span>
+            <p>Some text in the Modal..</p>-->
+            <div class="input-group" style="margin-bottom:1px">
+                <span class="input-group-addon" id="btnGroupAddon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                <input [(ngModel)]="email"  type="text" class="form-control" placeholder="Email" aria-describedby="btnGroupAddon">
+            </div>
+            <div class="form-group">
+                <textarea [(ngModel)]="emailSubject" class="form-control" rows="6" id="comment" placeholder="Subject"></textarea>
+            </div>
+        </div>
+        <div class="customModalFooter">
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary" (click)="sendEmail()"  style="background-color:#2a3f54">
+                    <!--<i class="fa fa-share" aria-hidden="true"></i>--> Save
+                </button>
+                <button type="button" class="btn btn-default" (click)="popToast()">
+                    <!--<i class="fa fa-share" aria-hidden="true"></i>--> Cansel
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+

@@ -1,0 +1,6 @@
+C:\Users\Gug\Desktop\LV\LVMigration\LogViewer.Web\LogViewer.Common\bin\Debug\LogViewer.Common.dll
+C:\Users\Gug\Desktop\LV\LVMigration\LogViewer.Web\LogViewer.Common\bin\Debug\LogViewer.Common.pdb
+C:\Users\Gug\Desktop\LV\LVMigration\LogViewer.Web\LogViewer.Common\obj\Debug\LogViewer.Common.csproj.CoreCompileInputs.cache
+C:\Users\Gug\Desktop\LV\LVMigration\LogViewer.Web\LogViewer.Common\obj\Debug\LogViewer.Common.dll
+C:\Users\Gug\Desktop\LV\LVMigration\LogViewer.Web\LogViewer.Common\obj\Debug\LogViewer.Common.pdb
+C:\Users\Gug\Desktop\LV\LVMigration\LogViewer.Web\LogViewer.Common\obj\Debug\LogViewer.Common.csprojResolveAssemblyReference.cache
